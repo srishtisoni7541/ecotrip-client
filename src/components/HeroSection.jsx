@@ -1,31 +1,31 @@
 import bgImg from "../Images/Group 26088726.png";
 const HeroSection = () => {
   return (
-    <section id="home" className="relative h-screen w-full flex items-center justify-center">
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url('${bgImg}')`
-        }}
-      >
-        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+    <div className="min-h-screen w-full py-10 px-20 ">
+      <h1 className="text-6xl font-bold text-gray-800">Experience <br /> the wilderness </h1>
+      <div className="mt-6">
+        <p>Join group tours or customize your dream safari</p>
+        <div className="buttons flex  gap-4 mt-5">
+          <div className="buttonLeft py-1 px-3 rounded-sm bg-green-500 text-white">
+            <h2>View all tours</h2>
+          </div>
+          <div className="buttonRight py-1 px-5 rounded-sm border">
+            <h2>Customize your tour </h2>
+          </div>
+        </div>
       </div>
-      
-      <div className="relative z-10 text-center text-white px-6">
-        <h1 className="text-5xl md:text-7xl font-bold mb-6">
-          Experience<br />
-          the wilderness
-        </h1>
-        <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
-          We only<br />
-          offer success<br />
-          rate.
-        </p>
-        <button className="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-full font-semibold transition-colors">
-          Start Your Adventure
-        </button>
+      <div className="video w-full relative rounded-md overflow-hidden mt-10  flex items-center justify-center">
+        <img className="h-[50%] w-full object-fit" src="https://media.istockphoto.com/id/520373654/photo/bengal-tiger-on-a-tree-wildlife-shot.jpg?s=612x612&w=0&k=20&c=zg1FMF_Z83Wtn-_GmwHp4Rs_UaArgq8BF7YWGlk_YPM=" alt="" />
+        <div className="text absolute text-white">
+          <h3 className="text-5xl font-bold">The only </h3>
+        <h3 className="text-5xl font-bold ml-8">company with</h3>
+        <h1 className="text-8xl font-black">99%</h1>
+        <h2 className="text-5xl font-bold ml-8">success</h2>
+        <h1 className="text-7xl font-black">rate.</h1>
+        </div>
       </div>
-    </section>
+
+    </div>
   );
 };
 export default HeroSection;

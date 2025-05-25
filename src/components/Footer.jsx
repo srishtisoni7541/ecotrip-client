@@ -1,11 +1,19 @@
-
 import React from "react";
 import { Instagram, Youtube, X } from "lucide-react";
+import whatsappImg from "../Images/connect on whatsapp bg.png";
 export default function FooterSection() {
   return (
     <div className="bg-[#f5f5f5] relative">
       {/* WhatsApp Banner */}
-      <div className="bg-white w-[65%] absolute rounded-md left-[15%] top-[-10%] py-8 px-4 md:px-12 flex flex-col md:flex-row items-center justify-between border-b">
+      <div
+        className=" w-[65%] absolute rounded-md left-[15%] top-[-10%] py-8 px-4 md:px-12 flex flex-col md:flex-row items-center justify-between border-b"
+        style={{
+          backgroundImage: `url(${whatsappImg})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
         <div className="text-center md:text-left mb-4 md:mb-0">
           <h2 className="text-2xl font-semibold">
             Get latest updates on your{" "}

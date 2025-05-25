@@ -1,12 +1,17 @@
 
-
+import img1 from '../Images/HappyGuest1.png';
+import img2 from '../Images/HappyGuest2.png';
+import img3 from '../Images/HappyGuest3.png';
+import img4 from '../Images/HappyGuest4.png';
+import img5 from '../Images/HappyGuest5.png';
 
 const HappyGuestsSection = () => {
   const guestImages = [
-    "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-    "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-    "https://images.unsplash.com/photo-1572262280988-53b4269f4af9?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+   img1,
+   img2,
+   img3,
+   img4,
+   img5
   ];
 
   const duplicated = [...guestImages, ...guestImages]; // for infinite effect
@@ -23,7 +28,7 @@ const HappyGuestsSection = () => {
             {duplicated.map((image, index) => (
               <div
                 key={index}
-                className="min-w-[200px] h-[200px] rounded-lg overflow-hidden shadow"
+                className="min-w-[300px] h-[200px] rounded-lg overflow-hidden shadow"
               >
                 <img
                   src={image}

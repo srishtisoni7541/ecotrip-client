@@ -1,29 +1,31 @@
 // Best of Indian Wildlife Component
+import img1 from "../Images/IndianWildImgLeftbtm.png";
+import IndianWildImgLeftTop from '../Images/IndianWildImgLeftTop.png';
+import IndianWildImgRightTop from '../Images/IndianWildImgRightTop.png';
+import IndianWildImgLeftbtm from '../Images/IndianWildImgRightbtm.png';
 const IndianWildlifeSection = () => {
   const destinations = [
     {
       id: 1,
       title: "Pench National Park",
-      image:
-        "https://media.istockphoto.com/id/1397004186/photo/two-very-cute-small-wild-tiger-cubs-with-her-mom-showing-love-and-affection-to-her-mother.jpg?s=2048x2048&w=is&k=20&c=XQAJ-dc-rlxdsbAdhBD-gUaptO1JEH8Wqb8fX7XOGm4=",
+      image:IndianWildImgLeftTop,
     },
     {
       id: 2,
       title: "Jim Corbet National Park",
-      image:
-        "https://media.istockphoto.com/id/479037543/photo/tiger.webp?a=1&b=1&s=612x612&w=0&k=20&c=DE20HO23rmZPeedue1sILPSd1q2HRHSJ1bxFRXznyiA=",
+      image:img1
+        
     },
     {
       id: 3,
       title: "Kaziranga National Park",
-      image:
-        "https://plus.unsplash.com/premium_photo-1664301680046-deb815ddff0d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZGVlciUyMHBpY3xlbnwwfHwwfHx8MA%3D%3D",
+      image:IndianWildImgRightTop
+        
     },
     {
       id: 4,
       title: "Kanha National Park",
-      image:
-        "https://images.unsplash.com/photo-1713637728687-da1fda40d1a8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YnVmZmFsbG8lMjBwaWN8ZW58MHx8MHx8fDA%3D",
+      image:IndianWildImgLeftbtm
     },
   ];
 

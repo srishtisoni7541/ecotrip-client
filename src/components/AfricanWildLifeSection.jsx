@@ -1,26 +1,25 @@
 
-import React from "react";
 
+
+import img1 from '../Images/AfricaImg1.png';
+import img2 from '../Images/AfricaImg2.png';
+import img3 from '../Images/AfricaImg3.png';
+import img4 from '../Images/AfricaImg4.png';
 const destinations = [
   {
     name: "Pench National Park",
-    image:
-      "https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+    image:img1
   },
   {
     name: "Kaziranga National Park",
-    image:
-      "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+    image:img2
   },
   {
     name: "Jim Corbet National Park",
-    image:
-      "https://images.unsplash.com/photo-1563729841-3e5922a0423a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHdpbGRsaWZlJTIwYW5pbWFsc3xlbnwwfHwwfHx8MA%3D%3D",
-  },
+    image:img3},
   {
     name: "Kanha National Park",
-    image:
-      "https://media.istockphoto.com/id/519731334/photo/young-koala.webp?a=1&b=1&s=612x612&w=0&k=20&c=hiVeRP7fCJYt8d91aeszknk3BsShAoqXuboPWfSK-OM=",
+    image:img4
   },
 ];
 
