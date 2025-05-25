@@ -15,12 +15,12 @@ const AfricanWildlifeSection = () => {
     {
       id: 3,
       title: "Kruger National Park",
-      image: "https://images.unsplash.com/photo-1549366021-9f761d040a87?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      image: "https://images.unsplash.com/photo-1563729841-3e5922a0423a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHdpbGRsaWZlJTIwYW5pbWFsc3xlbnwwfHwwfHx8MA%3D%3D"
     },
     {
       id: 4,
       title: "Chobe National Park",
-      image: "https://images.unsplash.com/photo-1551972130-c6d4b7928c70?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      image: "https://media.istockphoto.com/id/519731334/photo/young-koala.webp?a=1&b=1&s=612x612&w=0&k=20&c=hiVeRP7fCJYt8d91aeszknk3BsShAoqXuboPWfSK-OM="
     }
   ];
 
@@ -38,7 +38,7 @@ const AfricanWildlifeSection = () => {
                   className="w-full h-64 object-cover rounded-lg"
                 />
               </div>
-              <div className="absolute inset-0 bg-black bg-opacity-40 rounded-lg flex items-end p-4">
+              <div className="absolute rounded-lg flex items-end p-4">
                 <h3 className="text-white font-semibold">{destination.title}</h3>
               </div>
             </div>
