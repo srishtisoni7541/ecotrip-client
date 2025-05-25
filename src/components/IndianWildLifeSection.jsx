@@ -28,36 +28,67 @@ const IndianWildlifeSection = () => {
   ];
 
   return (
-    <section id="destinations" className="py-16 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center mb-12">
-          Best of Indian Wildlife Destinations
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {destinations.map((destination) => (
-            <div key={destination.id} className="relative group cursor-pointer">
-              <div className="aspect-w-3 aspect-h-4">
-                <img
-                  src={destination.image}
-                  alt={destination.title}
-                  className="w-full h-64 object-cover rounded-lg"
-                />
-              </div>
-              <div className="absolute  rounded-lg flex items-end p-4">
-                <h3 className="text-black font-semibold">
-                  {destination.title}
-                </h3>
-              </div>
-            </div>
-          ))}
+     <div className="p-6 max-w-6xl mx-auto">
+      <h2 className="text-3xl font-bold mb-8 text-center">
+        Best of Indian Wildlife Destinations
+      </h2>
+
+      <div className="grid grid-cols-3 grid-rows-2 gap-4 h-[500px]">
+        {/* Left tall image */}
+        <div className="row-span-2 relative">
+          <img
+            src={destinations[0].image}
+            alt={destinations[0].name}
+            className="w-full h-full object-cover rounded"
+          />
+          <p className="absolute bottom-4 left-4 text-white font-semibold text-lg bg-black/50 px-3 py-1 rounded">
+            {destinations[0].title}
+          </p>
         </div>
-        <div className="text-center mt-20">
-          <button className="bg-green-500 hover:bg-green-600  text-white px-8 py-3 rounded-full font-semibold transition-colors">
-            Explore All Destinations
-          </button>
+
+        {/* Top-right small image */}
+        <div className="relative">
+          <img
+            src={destinations[2].image}
+            alt={destinations[2].name}
+            className="w-full h-full object-cover rounded"
+          />
+          <p className="absolute bottom-4 left-4 text-white font-semibold text-lg bg-black/50 px-3 py-1 rounded">
+            {destinations[2].title}
+          </p>
+        </div>
+
+        {/* Bottom-right small image */}
+        <div className="relative">
+          <img
+            src={destinations[3].image}
+            alt={destinations[3].name}
+            className="w-full h-full object-cover rounded"
+          />
+          <p className="absolute bottom-4 left-4 text-white font-semibold text-lg bg-black/50 px-3 py-1 rounded">
+            {destinations[3].title}
+          </p>
+        </div>
+
+        {/* Bottom full-width image on the right side */}
+        <div className="col-span-2 relative">
+          <img
+            src={destinations[1].image}
+            alt={destinations[1].name}
+            className="w-full h-full object-cover rounded"
+          />
+          <p className="absolute bottom-4 left-4 text-white font-semibold text-lg bg-black/50 px-3 py-1 rounded">
+            {destinations[1].title}
+          </p>
         </div>
       </div>
-    </section>
+
+      <div className="mt-10 w-full flex justify-center">
+        <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded text-lg">
+          View All African Destinations
+        </button>
+      </div>
+    </div>
   );
 };
 export default IndianWildlifeSection;
