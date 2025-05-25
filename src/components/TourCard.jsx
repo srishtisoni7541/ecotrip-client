@@ -1,8 +1,5 @@
 
-
-
 import React from "react";
-
 export default function TourCard({ images, description, startDate, name }) {
   return (
     <div className="rounded flex gap-5 p-4 shadow">
