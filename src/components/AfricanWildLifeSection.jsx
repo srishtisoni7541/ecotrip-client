@@ -39,12 +39,12 @@ const AfricanWildlifeSection = () => {
                 />
               </div>
               <div className="absolute rounded-lg flex items-end p-4">
-                <h3 className="text-white font-semibold">{destination.title}</h3>
+                <h3 className="text-black font-semibold">{destination.title}</h3>
               </div>
             </div>
           ))}
         </div>
-        <div className="text-center mt-8">
+        <div className="text-center mt-20">
           <button className="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-full font-semibold transition-colors">
             Explore All Destinations
           </button>
