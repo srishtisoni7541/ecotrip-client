@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { User, Menu, X, Star, MapPin, Calendar, Users, ArrowRight, Phone, Mail } from 'lucide-react';
+import { User, Menu, X, Star, MapPin, Calendar, Users, ArrowRight, Phone, Mail, Link } from 'lucide-react';
+import { NavLink } from 'react-router-dom';
 
 // Navbar Component
 const Nav = () => {
@@ -15,7 +16,8 @@ const Nav = () => {
 
         <div className="hidden md:flex items-center space-x-8">
           <div className="flex items-center bg-green-100 rounded-full px-6 py-2 space-x-6">
-            <a href="#home" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">Home</a>
+            <NavLink to='/'  className="text-gray-700 hover:text-gray-900 transition-colors font-medium">   Home </NavLink>
+            
             <a href="#tours" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">Tours</a>
             <a href="#destinations" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">Destinations</a>
             <a href="#testimonials" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">Testimonials</a>
