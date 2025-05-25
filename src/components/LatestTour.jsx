@@ -14,9 +14,9 @@ export default function LatestTours() {
   useEffect(() => {
     const fetchTours = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/trips"); // ⬅️ Replace this with your real API
+        const res = await axios.get("http://localhost:5000/api/trips"); 
         console.log(res.data.data);
-        setTours(res.data.data || []); // Adjust this depending on your API response structure
+        setTours(res.data.data || []); 
       } catch (err) {
         setError(err.message || "Failed to fetch tours");
       } finally {
