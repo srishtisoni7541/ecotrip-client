@@ -1,6 +1,4 @@
 
-
-
 import img1 from '../Images/AfricaImg1.png';
 import img2 from '../Images/AfricaImg2.png';
 import img3 from '../Images/AfricaImg3.png';

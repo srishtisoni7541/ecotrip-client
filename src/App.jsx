@@ -6,6 +6,7 @@ import { Route, Routes } from 'react-router-dom'
 import AdminPanel from './admin-panel/AdminPanel'
 import ToursPage from './pages/ToursPage'
 import DateWiseTourPage from './pages/DateWiseTourPage'
+import TourDetailPage from './pages/TourDetailPage'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Route path='/admin' element={<AdminPanel/>}/>
       <Route path='/tour' element={<ToursPage/>}/>
       <Route path='/tour-by-date' element={<DateWiseTourPage/>}/>
+      <Route path='/tour-details' element={<TourDetailPage/>}/>
      </Routes>
     </div>
   )
