@@ -24,7 +24,7 @@ const OurPartnersSection = () => {
   return (
     <section className="py-16 bg-gray-50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center mb-12">Our Partners</h2>
+        <h2 className="text-5xl font-bold text-center mb-12">Our Partners</h2>
 
         <div className="relative overflow-hidden">
           <div className="flex gap-12 animate-scroll whitespace-nowrap">
@@ -36,7 +36,7 @@ const OurPartnersSection = () => {
                 <img
                   src={partner.logo}
                   alt={partner.name}
-                  className="w-32 h-16 object-contain"
+                  className="w-32 h-24 object-contain"
                 />
               </div>
             ))}

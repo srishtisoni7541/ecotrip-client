@@ -2,15 +2,15 @@ import bgImg from "../Images/Group 26088726.png";
 const HeroSection = () => {
   return (
     <div className="min-h-screen w-full py-10 px-20 ">
-      <h1 className="text-6xl font-bold text-gray-800">Experience <br /> the wilderness </h1>
+      <h1 className="text-7xl font-bold text-gray-800">Experience <br /> the wilderness </h1>
       <div className="mt-6">
-        <p>Join group tours or customize your dream safari</p>
+        <p className="text-xl">Join group tours or customize your dream safari</p>
         <div className="buttons flex  gap-4 mt-5">
           <div className="buttonLeft py-1 px-3 rounded-sm bg-green-500 text-white">
-            <h2>View all tours</h2>
+            <h2 className="text-xl">View all tours</h2>
           </div>
           <div className="buttonRight py-1 px-5 rounded-sm border">
-            <h2>Customize your tour </h2>
+            <h2 className="text-xl">Customize your tour </h2>
           </div>
         </div>
       </div>
