@@ -36,7 +36,7 @@ export default function FooterSection() {
       </div>
 
       {/* Footer */}
-      <footer className="bg-[#0c121f] text-white px-4 md:px-16 py-30">
+      <footer className="bg-[#0c121f] w-full text-white px-4 md:px-16 py-30">
         <div className="flex flex-col md:flex-row justify-between items-start gap-10">
           {/* Logo & Social */}
           <div>
