@@ -40,11 +40,11 @@ export default function FooterSection() {
         <div className="flex flex-col md:flex-row justify-between items-start gap-10">
           {/* Logo & Social */}
           <div>
-            <h1 className="text-2xl font-bold mb-4">
+            <h1 className="text-5xl font-bold mb-4">
               ecotr<span className="text-green-500">!p</span>
             </h1>
             <div>
-              <p className="text-gray-300 mb-4">
+              <p className="text-gray-300 text-xl mb-4">
                 Let's connect with our socials
               </p>
               <div className="flex space-x-4">
@@ -52,19 +52,19 @@ export default function FooterSection() {
                   href="#"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
-                  <Instagram size={24} />
+                  <Instagram size={34} />
                 </a>
                 <a
                   href="#"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
-                  <Youtube size={24} />
+                  <Youtube size={34} />
                 </a>
                 <a
                   href="#"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
-                  <X size={24} />
+                  <X size={34} />
                 </a>
               </div>
             </div>
@@ -73,7 +73,7 @@ export default function FooterSection() {
           {/* DISCOVER US */}
           <div>
             <h3 className="font-semibold mb-3">DISCOVER US</h3>
-            <ul className="space-y-1 text-sm text-gray-300">
+            <ul className="space-y-1 text-md text-gray-300">
               <li>Guest Review</li>
               <li>About Us</li>
               <li>Customize Your Trip</li>
@@ -85,7 +85,7 @@ export default function FooterSection() {
           {/* PAGES */}
           <div>
             <h3 className="font-semibold mb-3">PAGES</h3>
-            <ul className="space-y-1 text-sm text-gray-300">
+            <ul className="space-y-1 text-md text-gray-300">
               <li>Home</li>
               <li>Tours</li>
               <li>Indian Wildlife Destination</li>
@@ -98,7 +98,7 @@ export default function FooterSection() {
           {/* SUPPORT */}
           <div>
             <h3 className="font-semibold mb-3">SUPPORT</h3>
-            <ul className="space-y-1 text-sm text-gray-300">
+            <ul className="space-y-1 text-md text-gray-300">
               <li>Contact Us</li>
               <li>Leave Your Feedback</li>
             </ul>
@@ -107,7 +107,7 @@ export default function FooterSection() {
           {/* Get in Touch */}
           <div>
             <h3 className="font-semibold mb-3">Get in Touch</h3>
-            <ul className="space-y-1 text-sm text-gray-300">
+            <ul className="space-y-1 text-md text-gray-300">
               <li>+91 1234567548</li>
               <li>hello@ecotrip.com</li>
               <li>
@@ -121,7 +121,7 @@ export default function FooterSection() {
           </div>
         </div>
 
-        <div className="text-center text-sm text-gray-400 mt-10 border-t border-gray-700 pt-4">
+        <div className="text-center text-md text-gray-400 mt-10 border-t border-gray-700 pt-4">
           ©copyright 2024 all right reserved
         </div>
       </footer>

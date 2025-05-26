@@ -1,24 +1,33 @@
-
-import img1 from '../Images/HappyGuest1.png';
-import img2 from '../Images/HappyGuest2.png';
-import img3 from '../Images/HappyGuest3.png';
-import img4 from '../Images/HappyGuest4.png';
-import img5 from '../Images/HappyGuest5.png';
+import img1 from "../Images/HappyGuest1.png";
+import img2 from "../Images/HappyGuest2.png";
+import img3 from "../Images/HappyGuest3.png";
+import img4 from "../Images/HappyGuest4.png";
+import img5 from "../Images/HappyGuest5.png";
 
 const HappyGuestsSection = () => {
   const guestImages = [
-   img1,
-   img2,
-   img3,
-   img4,
-   img5
+    img1,
+    img2,
+    img3,
+    img4,
+    img5,
+    img1,
+    img2,
+    img3,
+    img4,
+    img5,
+    img1,
+    img2,
+    img3,
+    img4,
+    img5,
   ];
 
   const duplicated = [...guestImages, ...guestImages]; // for infinite effect
 
   return (
-    <section className="py-16 bg-white overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="py-16  overflow-hidden">
+      <div className="w-full mx-auto px-6">
         <h2 className="text-2xl font-bold text-gray-800 mb-12 text-center">
           Over 18532+ Happy Guests at 158+ Global Destinations
         </h2>
