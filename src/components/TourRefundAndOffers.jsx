@@ -6,7 +6,7 @@ const TourRefundAndOffers = () => {
         <table className="min-w-full border border-gray-300 bg-white">
           <thead>
             <tr className="text-black  rounded-md ">
-              <th className="border bg-green-500 text-white text-xl w-[20%]   border-gray-300 px-2 py-10 text-left">
+              <th className="border bg-[#2A9F00] text-white text-xl w-[20%]   border-gray-300 px-2 py-10 text-left">
                 Cancellation received no. of <br /> days before departure
               </th>
               <th className="border border-gray-300 px-4 py-2 text-center">0-10D</th>
@@ -54,7 +54,7 @@ const TourRefundAndOffers = () => {
 
       {/* Buttons */}
       <div className="flex justify-center gap-4">
-        <button className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded text-sm font-medium">
+        <button className="bg-[#2A9F00] hover:bg-green-600 text-white px-6 py-2 rounded text-sm font-medium">
           Book Now
         </button>
         <button className="border border-gray-400 hover:bg-gray-100 text-sm px-6 py-2 rounded text-gray-800">

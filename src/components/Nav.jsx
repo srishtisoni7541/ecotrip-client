@@ -11,7 +11,7 @@ const Nav = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center space-x-1">
           <span className="text-2xl font-bold text-gray-800">ecotrip</span>
-          <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+          <div className="w-2 h-2 bg-[#2A9F00] rounded-full"></div>
         </div>
 
         <div className="hidden md:flex items-center space-x-8">

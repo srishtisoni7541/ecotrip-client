@@ -4,7 +4,7 @@ import img from '../Images/tourspageImg1.png';
 const ToursHomePage = () => {
   return (
     <section className="bg-[#f5f5f5] pb-16">
-      <div className="relative p-4">
+      <div className="relative p-4 px-28">
         <img
           src={img}
           alt="Tiger"

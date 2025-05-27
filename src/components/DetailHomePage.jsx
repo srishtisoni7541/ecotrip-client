@@ -50,7 +50,7 @@ const DetailHomePage = () => {
           <div className="flex gap-4 mt-6">
             <button
               onClick={() => setShowModal(true)}
-            className="bg-green-600 cursor-pointer text-white px-6 py-2 rounded font-semibold hover:bg-green-700">
+            className="bg-[#2A9F00] cursor-pointer text-white px-6 py-2 rounded font-semibold hover:bg-green-700">
               Book Now
             </button>
             <button
@@ -120,8 +120,8 @@ const DetailHomePage = () => {
               </div>
             </div>
             <button
-              className="bg-green-600 text-white px-6 py-2 rounded mt-4 hover:bg-green-700"
-              onClick={() => setShowModal(true)} // 👈 open modal
+              className="bg-[#2A9F00] text-white px-6 py-2 rounded mt-4 hover:bg-green-700"
+              onClick={() => setShowModal(true)} //  open modal
             >
               Request a Callback
             </button>

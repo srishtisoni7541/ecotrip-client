@@ -86,7 +86,7 @@ const IndianWildlifeSection = () => {
 
       {/* CTA Button */}
       <div className="mt-8 sm:mt-10 w-full flex justify-center">
-        <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded text-base sm:text-lg">
+        <button className="bg-[#2A9F00] hover:bg-green-700 text-white px-6 py-2 rounded text-base sm:text-lg">
           View All African Destinations
         </button>
       </div>

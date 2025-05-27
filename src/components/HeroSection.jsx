@@ -14,7 +14,7 @@ const HeroSection = () => {
           Join group tours or customize your dream safari
         </p>
         <div className="buttons flex flex-col sm:flex-row gap-4 mt-5">
-          <div className="buttonLeft py-2 px-4 rounded-sm bg-green-500 text-white text-center">
+          <div className="buttonLeft py-2 px-4 rounded-sm bg-[#2A9F00] text-white text-center">
             <h2 className="text-base sm:text-lg">View all tours</h2>
           </div>
           <div className="buttonRight py-2 px-4 rounded-sm border text-center sm:hidden">

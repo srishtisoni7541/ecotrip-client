@@ -17,7 +17,7 @@ export default function FooterSection() {
         <div className="text-center md:text-left mb-4 md:mb-0">
           <h2 className="text-2xl font-semibold">
             Get latest updates on your{" "}
-            <span className="text-green-500">Whatsapp</span>
+            <span className="text-[#2A9F00]">Whatsapp</span>
           </h2>
           <p className="text-gray-500 text-sm">
             Be the first to know about offers, promos, and updates.
@@ -29,7 +29,7 @@ export default function FooterSection() {
             placeholder="Enter Your Whatsapp No."
             className="px-4 py-2 border border-gray-300 rounded-l-full w-full md:w-64 outline-none"
           />
-          <button className="bg-green-500 text-white px-6 py-2 rounded-r-full hover:bg-green-600">
+          <button className="bg-[#2A9F00] text-white px-6 py-2 rounded-r-full hover:bg-green-600">
             Submit
           </button>
         </div>

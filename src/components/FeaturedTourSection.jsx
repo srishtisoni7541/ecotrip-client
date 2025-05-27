@@ -72,7 +72,7 @@ const FeaturedToursSection = () => {
 
                 <p className="text-xs text-gray-500 mb-4">per person</p>
 
-                <button className="bg-green-600 hover:bg-green-700 text-white text-sm font-medium px-6 py-2 rounded">
+                <button className="bg-[#2A9F00] hover:bg-green-700 text-white text-sm font-medium px-6 py-2 rounded">
                   View Now
                 </button>
               </div>

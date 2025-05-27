@@ -79,7 +79,7 @@ export default function AfricanWildlifeSection() {
       </div>
 
       <div className="mt-10 w-full flex justify-center">
-        <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded text-lg">
+        <button className="bg-[#2A9F00] hover:bg-green-700 text-white px-6 py-2 rounded text-lg">
           View All African Destinations
         </button>
       </div>
