@@ -32,5 +32,9 @@
   },
   "overrides": {
   "@rollup/rollup-linux-x64-gnu": "false"
+},
+"engines": {
+  "node": "20.x"
 }
+
 }
