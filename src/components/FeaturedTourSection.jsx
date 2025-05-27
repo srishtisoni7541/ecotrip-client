@@ -3,8 +3,10 @@ import { Heart } from "lucide-react";
 import img1 from '../Images/img1.png';
 import img2 from '../Images/featuredImg2.png';
 import img3 from '../Images/featuredImg3.png';
+import { useLocation } from "react-router-dom";
 
 const FeaturedToursSection = () => {
+  const  location = useLocation();
   const tours = [
     {
       id: 1,
@@ -73,7 +75,7 @@ const FeaturedToursSection = () => {
                 <p className="text-xs text-gray-500 mb-4">per person</p>
 
                 <button className="bg-[#2A9F00] hover:bg-green-700 text-white text-sm font-medium px-6 py-2 rounded">
-                  View Now
+                   {location.pathname === "/"  && location.pathname === '/tour-by-date'? "View Now" : "View Dates"}
                 </button>
               </div>
             </div>
