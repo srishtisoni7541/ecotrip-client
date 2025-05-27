@@ -11,7 +11,7 @@ const DateWiseTourPage = () => {
     <div className="w-full p-6">
       <Nav />
       <div className="p-10 flex items-end">
-        <h1 className="text-5xl font-bold">
+        <h1 className="text-5xl pl-14 font-bold">
           Explore with <br />
           us on{" "}
         </h1>
