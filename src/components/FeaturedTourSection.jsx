@@ -75,7 +75,7 @@ const FeaturedToursSection = () => {
                 <p className="text-xs text-gray-500 mb-4">per person</p>
 
                 <button className="bg-[#2A9F00] hover:bg-green-700 text-white text-sm font-medium px-6 py-2 rounded">
-                   {location.pathname === "/"  && location.pathname === '/tour-by-date'? "View Now" : "View Dates"}
+                   {location.pathname === "/"  || location.pathname === '/tour-by-date'? "View Now" : "View Dates"}
                 </button>
               </div>
             </div>
