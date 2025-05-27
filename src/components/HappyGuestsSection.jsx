@@ -28,7 +28,7 @@ const HappyGuestsSection = () => {
   return (
     <section className="py-16  overflow-hidden">
       <div className="w-full mx-auto px-6">
-        <h2 className="text-2xl font-bold text-gray-800 mb-12 text-center">
+        <h2 className="text-3xl font-bold text-gray-800 mb-12 text-center">
           Over 18532+ Happy Guests at 158+ Global Destinations
         </h2>
 

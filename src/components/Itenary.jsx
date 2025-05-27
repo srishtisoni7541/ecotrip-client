@@ -2,7 +2,7 @@ import { CircleDot } from "lucide-react";
 
 const Itinerary = () => {
   return (
-    <div className="bg-[#f5f5f5]  p-6 w-full">
+    <div className="bg-[#f5f5f5]  pl-20 w-full">
       <div className="w-full min-h-screen  p-6 mx-auto">
         {/* Tabs */}
         <div className="flex gap-6 mb-6">
@@ -57,9 +57,9 @@ const Itinerary = () => {
 
           {/* Right Side: Placeholders */}
           <div className="space-y-6">
-            <div className="bg-gray-200 h-[40%] w-[60%] rounded" />
-            <div className="bg-gray-200  h-[40%] w-[60%]  rounded" />
-            <div className="bg-gray-200  h-[40%] w-[60%]  rounded" />
+            <div className="bg-gray-200 h-[40%] w-[80%] rounded" />
+            <div className="bg-gray-200  h-[40%] w-[80%]  rounded" />
+            <div className="bg-gray-200  h-[40%] w-[80%]  rounded" />
           </div>
         </div>
       </div>

@@ -1,17 +1,27 @@
-import { Calendar, Clock, ChevronLeft, Phone } from "lucide-react";
-import tigerImg from '../Images/featuredImg3.png';
+import { useState } from "react";
+import { Calendar, Clock, ChevronLeft } from "lucide-react";
+import tigerImg from "../Images/featuredImg3.png";
 import { NavLink } from "react-router-dom";
+import DreamBookingModal from "./DreamBookingModal";
 
 const DetailHomePage = () => {
+  const [showModal, setShowModal] = useState(false);
   return (
-    <div className="bg-[#f5f5f5] min-h-screen p-6">
-      {/* Back */}
+    <div className="bg-[#f5f5f5] min-h-screen px-28 py-4 relative">
+      {/* Back Button */}
       <div className="mb-4 flex items-center gap-2 text-sm text-gray-700 cursor-pointer">
         <ChevronLeft size={18} />
-        <NavLink to='/'>Back</NavLink>
+        <NavLink to="/">Back</NavLink>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {/* Modal */}
+      {showModal && <DreamBookingModal onClose={() => setShowModal(false)} />}
+
+      <div
+        className={`grid grid-cols-1 md:grid-cols-2 gap-6 ${
+          showModal ? "blur-sm pointer-events-none" : ""
+        }`}
+      >
         {/* Left Section */}
         <div>
           <h1 className="text-2xl font-bold">Tadoba National Park -</h1>
@@ -38,10 +48,14 @@ const DetailHomePage = () => {
           </div>
 
           <div className="flex gap-4 mt-6">
-            <button className="bg-green-600 text-white px-6 py-2 rounded font-semibold hover:bg-green-700">
+            <button
+              onClick={() => setShowModal(true)}
+            className="bg-green-600 cursor-pointer text-white px-6 py-2 rounded font-semibold hover:bg-green-700">
               Book Now
             </button>
-            <button className="border border-gray-400 px-6 py-2 rounded font-semibold hover:bg-gray-100">
+            <button
+              onClick={() => setShowModal(true)}
+             className="border border-gray-400 px-6 py-2 cursor-pointer rounded font-semibold hover:bg-gray-100">
               Want to Customize this tour
             </button>
           </div>
@@ -65,7 +79,6 @@ const DetailHomePage = () => {
             <div className="flex items-center gap-2">
               🛡️ <span>Travel Insurance</span>
             </div>
-            {/* Repeated for consistency */}
             <div className="flex items-center gap-2">
               🍽️ <span>Meal</span>
             </div>
@@ -98,11 +111,18 @@ const DetailHomePage = () => {
                 <label className="block mb-1">Contact</label>
                 <div className="flex items-center border border-gray-300 rounded px-3 py-2">
                   <span className="mr-2">🇮🇳</span>
-                  <span>2545125487</span>
+                  <input
+                    type="text"
+                    placeholder="Contact*"
+                    className="w-full outline-none"
+                  />
                 </div>
               </div>
             </div>
-            <button className="bg-green-600 text-white px-6 py-2 rounded mt-4  hover:bg-green-700">
+            <button
+              className="bg-green-600 text-white px-6 py-2 rounded mt-4 hover:bg-green-700"
+              onClick={() => setShowModal(true)} // 👈 open modal
+            >
               Request a Callback
             </button>
           </div>

@@ -29,8 +29,8 @@ const IndianWildlifeSection = () => {
   ];
 
   return (
-    <div className="p-4 sm:p-6 max-w-6xl mx-auto">
-      <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-center">
+    <div className="p-4 w-full px-28 mx-auto">
+      <h2 className="text-6xl  font-bold mb-6 sm:mb-8 text-center">
         Best of Indian Wildlife Destinations
       </h2>
 

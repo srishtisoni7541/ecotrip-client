@@ -2,7 +2,7 @@ import { CheckCircle } from "lucide-react";
 
 const TourInfo = () => {
   return (
-    <div className=" p-6 w-full overflow-hidden mx-auto px-20 text-sm text-gray-800">
+    <div className=" p-6 w-full overflow-hidden mx-auto px-26 text-sm text-gray-800">
       {/* Tabs */}
       <div className="flex gap-4 mb-6 border-b border-gray-200">
         <span className="text-[#00A859] font-medium border-b-2 border-[#00A859] pb-1 cursor-pointer">
@@ -26,7 +26,7 @@ const TourInfo = () => {
         </div>
 
         {/* Right side highlight box */}
-        <div className="bg-[#0c1c2c] text-white p-10 px-6 rounded-md w-[100%] space-y-4">
+        <div className="bg-[#0c1c2c] text-white p-10 px-6  rounded-md w-[100%] space-y-4">
           <h3 className="text-lg font-medium">We make ecotrip most preferred & valuable choice !</h3>
           <div className="flex items-center justify-between text-center">
             <div>

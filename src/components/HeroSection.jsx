@@ -1,5 +1,4 @@
-
-import bgImg from "../Images/Group 26088726.png";
+import video from '../videos/video.mp4';
 
 const HeroSection = () => {
   return (
@@ -26,11 +25,8 @@ const HeroSection = () => {
 
       {/* Image with Text Overlay */}
       <div className="video w-full relative rounded-md overflow-hidden mt-10 flex items-center justify-center">
-        <img
-          className="h-auto sm:h-[800px] w-full object-cover"
-          src="https://media.istockphoto.com/id/520373654/photo/bengal-tiger-on-a-tree-wildlife-shot.jpg?s=612x612&w=0&k=20&c=zg1FMF_Z83Wtn-_GmwHp4Rs_UaArgq8BF7YWGlk_YPM="
-          alt="Tiger"
-        />
+        <video className='h-full w-full object-cover' autoPlay muted loop src={video}></video>
+      
         <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center px-2">
           <h3 className="text-2xl sm:text-4xl font-bold">The only</h3>
           <h3 className="text-2xl sm:text-4xl font-bold">company with</h3>

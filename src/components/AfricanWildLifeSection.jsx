@@ -23,8 +23,8 @@ const destinations = [
 
 export default function AfricanWildlifeSection() {
   return (
-    <div className="p-6 max-w-6xl mx-auto">
-      <h2 className="text-3xl font-bold mb-8 text-center">
+    <div className="w-full p-6 px-28  mx-auto">
+      <h2 className="text-6xl font-bold mb-8 text-center">
         Best of African Wildlife Destinations
       </h2>
 

@@ -58,7 +58,7 @@ const WhatSetsUsApartSection = () => {
   ];
 
   return (
-    <section className="w-[90%] ml-[5%] py-16 bg-slate-800">
+    <section className="w-[85%] ml-[7%] py-16 bg-slate-800">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-5xl font-bold text-white mb-8">

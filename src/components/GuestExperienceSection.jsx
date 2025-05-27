@@ -23,14 +23,14 @@ const GuestExperiencesSection = () => {
   ];
 
   return (
-    <section className="py-16 bg-gray-50 w-full">
+    <section className="py-16  bg-gray-50 w-full">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-left mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-2">Experiences</h2>
+          <h2 className="text-6xl font-bold text-gray-800 mb-2">Experiences</h2>
           <p className="text-xl text-gray-600">shared by our beloved Guests</p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 ">
           {experiences.map((experience, index) => (
             <div key={index} className="relative">
               <div className="aspect-w-4 aspect-h-5">

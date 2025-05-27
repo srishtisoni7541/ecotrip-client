@@ -1,6 +1,6 @@
 const TourRefundAndOffers = () => {
   return (
-    <div className="bg-[#f2f2f2] px-4 py-10 space-y-10 text-sm text-gray-800 w-full mx-auto">
+    <div className="bg-[#f2f2f2] px-26 py-10 space-y-10 text-sm text-gray-800 w-full mx-auto">
       {/* Refund Table */}
       <div className="overflow-x-auto">
         <table className="min-w-full border border-gray-300 bg-white">
@@ -37,14 +37,14 @@ const TourRefundAndOffers = () => {
         <div className="flex flex-col md:flex-row justify-center gap-10">
           {/* Offer Card 1 */}
           <div className="bg-white py-6 px-10 rounded-md shadow text-left w-full max-w-xs">
-            <h3 className="text-[#00A859] text-xl font-bold mb-2">EARLY BIRD OFFER</h3>
+            <h3 className="text-green-500 text-xl font-bold mb-2">EARLY BIRD OFFER</h3>
             <p className="mt-4 text-xl">
               Book this tour at least 4 months before the date of departure and get flat 10% OFF off per person.
             </p>
           </div>
           {/* Offer Card 2 */}
           <div className="bg-white h-58 py-6 px-10 rounded-md shadow text-left w-full max-w-xs">
-            <h3 className="text-[#00A859] text-xl font-bold mb-2">GROUP DISCOUNT OFFER</h3>
+            <h3 className="text-green-500 text-xl font-bold mb-2">GROUP DISCOUNT OFFER</h3>
             <p className="mt-4 text-xl">
               Book this tour for 4 or more persons at the same time and get flat 10% OFF per person.
             </p>
@@ -54,7 +54,7 @@ const TourRefundAndOffers = () => {
 
       {/* Buttons */}
       <div className="flex justify-center gap-4">
-        <button className="bg-[#00A859] hover:bg-green-600 text-white px-6 py-2 rounded text-sm font-medium">
+        <button className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded text-sm font-medium">
           Book Now
         </button>
         <button className="border border-gray-400 hover:bg-gray-100 text-sm px-6 py-2 rounded text-gray-800">
