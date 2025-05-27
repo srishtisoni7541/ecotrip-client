@@ -1,12 +1,11 @@
-
 import { Heart } from "lucide-react";
-import img1 from '../Images/img1.png';
-import img2 from '../Images/featuredImg2.png';
-import img3 from '../Images/featuredImg3.png';
+import img1 from "../Images/img1.png";
+import img2 from "../Images/featuredImg2.png";
+import img3 from "../Images/featuredImg3.png";
 import { useLocation } from "react-router-dom";
 
 const FeaturedToursSection = () => {
-  const  location = useLocation();
+  const location = useLocation();
   const tours = [
     {
       id: 1,
@@ -43,11 +42,23 @@ const FeaturedToursSection = () => {
   return (
     <section id="tours" className="py-16">
       <div className="w-full mx-auto px-28">
-        <h2 className="text-6xl font-bold text-center mb-12">Featured Tours for You</h2>
+        {location.pathname === "/" ? (
+          <h2 className="text-6xl font-bold text-center mb-12">
+            Featured Tours for You
+          </h2>
+        ) : (
+          <h2 className="text-6xl font-bold text-left mb-12 leading-tight">
+            <span className="block">Discover</span>
+            <span className="block">Your Next Escape</span>
+          </h2>
+        )}
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {tours.map((tour) => (
-            <div key={tour.id} className="max-w-sm rounded overflow-hidden shadow-md border border-gray-200">
+            <div
+              key={tour.id}
+              className="max-w-sm rounded overflow-hidden shadow-md border border-gray-200"
+            >
               <img
                 src={tour.image}
                 alt={tour.location}
@@ -63,19 +74,28 @@ const FeaturedToursSection = () => {
                 <p className="text-sm text-gray-600 mb-4">Date : {tour.date}</p>
 
                 <div className="mb-2">
-                  <p className="text-xs text-gray-500 font-semibold">{tour.offer}</p>
-                  <p className="text-sm text-green-600 font-semibold">{tour.label}</p>
+                  <p className="text-xs text-gray-500 font-semibold">
+                    {tour.offer}
+                  </p>
+                  <p className="text-sm text-green-600 font-semibold">
+                    {tour.label}
+                  </p>
                 </div>
 
                 <div className="flex items-end gap-2 mb-2">
                   <p className="text-xl font-bold">{tour.currentPrice}</p>
-                  <p className="text-sm text-gray-500 line-through">{tour.oldPrice}</p>
+                  <p className="text-sm text-gray-500 line-through">
+                    {tour.oldPrice}
+                  </p>
                 </div>
 
                 <p className="text-xs text-gray-500 mb-4">per person</p>
 
                 <button className="bg-[#2A9F00] hover:bg-green-700 text-white text-sm font-medium px-6 py-2 rounded">
-                   {location.pathname === "/"  || location.pathname === '/tour-by-date'? "View Now" : "View Dates"}
+                  {location.pathname === "/" ||
+                  location.pathname === "/tour-by-date"
+                    ? "View Now"
+                    : "View Dates"}
                 </button>
               </div>
             </div>

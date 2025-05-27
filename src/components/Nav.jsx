@@ -21,7 +21,7 @@ const Nav = () => {
             <a href="#tours" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">Tours</a>
             <a href="#destinations" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">Destinations</a>
             <a href="#testimonials" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">Testimonials</a>
-            <a href="#about" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">About us</a>
+              <NavLink  to='/about' className="text-gray-700 hover:text-gray-900 transition-colors font-medium">  About us</NavLink> 
             <a href="#contact" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">Contact us</a>
           </div>
           <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">

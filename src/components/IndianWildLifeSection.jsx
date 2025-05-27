@@ -1,10 +1,11 @@
-
 import img1 from "../Images/IndianWildImgLeftbtm.png";
-import IndianWildImgLeftTop from '../Images/IndianWildImgLeftTop.png';
-import IndianWildImgRightTop from '../Images/IndianWildImgRightTop.png';
-import IndianWildImgLeftbtm from '../Images/IndianWildImgRightbtm.png';
+import IndianWildImgLeftTop from "../Images/IndianWildImgLeftTop.png";
+import IndianWildImgRightTop from "../Images/IndianWildImgRightTop.png";
+import IndianWildImgLeftbtm from "../Images/IndianWildImgRightbtm.png";
+import { useLocation } from "react-router-dom";
 
 const IndianWildlifeSection = () => {
+  const location = useLocation();
   const destinations = [
     {
       id: 1,
@@ -30,8 +31,10 @@ const IndianWildlifeSection = () => {
 
   return (
     <div className="p-4 w-full px-28 mx-auto">
-      <h2 className="text-6xl  font-bold mb-6 sm:mb-8 text-center">
-        Best of Indian Wildlife Destinations
+      <h2 className="text-6xl font-bold mb-6 sm:mb-8 text-center">
+        {location.pathname === "/"
+          ? "Best of Indian Wildlife Destinations"
+          : ""}
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:grid-rows-2 gap-4 md:h-[500px]">
@@ -85,11 +88,13 @@ const IndianWildlifeSection = () => {
       </div>
 
       {/* CTA Button */}
-      <div className="mt-8 sm:mt-10 w-full flex justify-center">
-        <button className="bg-[#2A9F00] hover:bg-green-700 text-white px-6 py-2 rounded text-base sm:text-lg">
-          View All African Destinations
-        </button>
-      </div>
+      {location.pathname === "/" && (
+        <div className="mt-8 sm:mt-10 w-full flex justify-center">
+          <button className="bg-[#2A9F00] hover:bg-green-700 text-white px-6 py-2 rounded text-base sm:text-lg">
+            View All Indian Destinations
+          </button>
+        </div>
+      )}
     </div>
   );
 };

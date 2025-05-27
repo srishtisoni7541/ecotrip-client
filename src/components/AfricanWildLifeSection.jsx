@@ -1,4 +1,5 @@
 
+import { useLocation } from 'react-router-dom';
 import img1 from '../Images/AfricaImg1.png';
 import img2 from '../Images/AfricaImg2.png';
 import img3 from '../Images/AfricaImg3.png';
@@ -22,10 +23,12 @@ const destinations = [
 ];
 
 export default function AfricanWildlifeSection() {
+  const location = useLocation();
   return (
     <div className="w-full p-6 px-28  mx-auto">
       <h2 className="text-6xl font-bold mb-8 text-center">
-        Best of African Wildlife Destinations
+        {location.pathname === '/'? ' Best of African Wildlife Destinations' :''}
+       
       </h2>
 
       <div className="grid grid-cols-3 grid-rows-2 gap-4 h-[500px]">
@@ -78,11 +81,13 @@ export default function AfricanWildlifeSection() {
         </div>
       </div>
 
-      <div className="mt-10 w-full flex justify-center">
-        <button className="bg-[#2A9F00] hover:bg-green-700 text-white px-6 py-2 rounded text-lg">
-          View All African Destinations
-        </button>
-      </div>
+       {location.pathname === "/" && (
+        <div className="mt-8 sm:mt-10 w-full flex justify-center">
+          <button className="bg-[#2A9F00] hover:bg-green-700 text-white px-6 py-2 rounded text-base sm:text-lg">
+            View All African Destinations
+          </button>
+        </div>
+      )}
     </div>
   );
 }

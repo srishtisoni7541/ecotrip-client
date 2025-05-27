@@ -7,6 +7,9 @@ import AdminPanel from './admin-panel/AdminPanel'
 import ToursPage from './pages/ToursPage'
 import DateWiseTourPage from './pages/DateWiseTourPage'
 import TourDetailPage from './pages/TourDetailPage'
+import WildLifeDestinationPage from './pages/WildLifeDestinationPage'
+import TestimonialPage from './pages/TestimonialPage'
+import AboutUsPage from './pages/AboutUsPage'
 
 const App = () => {
   return (
@@ -17,6 +20,10 @@ const App = () => {
       <Route path='/tour' element={<ToursPage/>}/>
       <Route path='/tour-by-date' element={<DateWiseTourPage/>}/>
       <Route path='/tour-details' element={<TourDetailPage/>}/>
+      <Route path='/indian-destination' element={<WildLifeDestinationPage/>} />
+      <Route path='/african-destination' element={<WildLifeDestinationPage/>}/>
+      <Route path ='/testimonial' element ={<TestimonialPage/>}/>
+      <Route path='/about' element={<AboutUsPage/>}/>
      </Routes>
     </div>
   )
