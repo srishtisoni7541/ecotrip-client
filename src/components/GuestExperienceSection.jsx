@@ -23,8 +23,8 @@ const GuestExperiencesSection = () => {
   ];
 
   return (
-    <section className="py-16  bg-gray-50 w-full">
-      <div className="max-w-6xl mx-auto px-6">
+    <section className="py-16   bg-gray-50 w-full">
+      <div className="w-full px-28 mx-auto px-6">
         <div className="text-left mb-12">
           <h2 className="text-6xl font-bold text-gray-800 mb-2">Experiences</h2>
           <p className="text-xl text-gray-600">shared by our beloved Guests</p>
