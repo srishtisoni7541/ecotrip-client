@@ -18,9 +18,9 @@ const Nav = () => {
           <div className="flex items-center bg-green-100 rounded-full px-6 py-2 space-x-6">
             <NavLink to='/'  className="text-gray-700 hover:text-gray-900 transition-colors font-medium">   Home </NavLink>
             
-            <a href="#tours" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">Tours</a>
+            <NavLink to='/tour' className="text-gray-700 hover:text-gray-900 transition-colors font-medium">  Tours</NavLink>
             <a href="#destinations" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">Destinations</a>
-            <a href="#testimonials" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">Testimonials</a>
+            <NavLink to='/testimonial' className="text-gray-700 hover:text-gray-900 transition-colors font-medium">Testimonials</NavLink>
               <NavLink  to='/about' className="text-gray-700 hover:text-gray-900 transition-colors font-medium">  About us</NavLink> 
             <a href="#contact" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">Contact us</a>
           </div>
