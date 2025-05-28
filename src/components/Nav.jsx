@@ -22,7 +22,7 @@ const Nav = () => {
             <a href="#destinations" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">Destinations</a>
             <NavLink to='/testimonial' className="text-gray-700 hover:text-gray-900 transition-colors font-medium">Testimonials</NavLink>
               <NavLink  to='/about' className="text-gray-700 hover:text-gray-900 transition-colors font-medium">  About us</NavLink> 
-            <a href="#contact" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">Contact us</a>
+             <NavLink to='/contact' className="text-gray-700 hover:text-gray-900 transition-colors font-medium">Contact us</NavLink>  
           </div>
           <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
             <User size={18} className="text-gray-600" />

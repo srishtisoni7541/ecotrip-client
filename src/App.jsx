@@ -10,6 +10,7 @@ import TourDetailPage from './pages/TourDetailPage'
 import WildLifeDestinationPage from './pages/WildLifeDestinationPage'
 import TestimonialPage from './pages/TestimonialPage'
 import AboutUsPage from './pages/AboutUsPage'
+import ContactUsPage from './pages/ContactUsPage'
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
       <Route path='/african-destination' element={<WildLifeDestinationPage/>}/>
       <Route path ='/testimonial' element ={<TestimonialPage/>}/>
       <Route path='/about' element={<AboutUsPage/>}/>
+      <Route path='/contact' element={<ContactUsPage/>}/>
      </Routes>
     </div>
   )
